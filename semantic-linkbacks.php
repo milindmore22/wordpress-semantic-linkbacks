@@ -12,7 +12,7 @@
  * Requires PHP: 5.6
  */
 
-if ( function_exists( '\Webmention\version' ) && version_compare( \Webmention\version(), '5.0.0', '<' ) ) {
+if ( ! function_exists( '\Webmention\version' ) || version_compare( \Webmention\version(), '5.0.0', '<' ) ) {
 	add_action( 'plugins_loaded', array( 'Semantic_Linkbacks_Plugin', 'init' ), 11 );
 
 	// initialize admin settings
