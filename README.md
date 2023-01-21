@@ -1,11 +1,11 @@
 # Semantic-Linkbacks #
-**Contributors:** [pfefferle](https://profiles.wordpress.org/pfefferle), [dshanske](https://profiles.wordpress.org/dshanske), [edent](https://profiles.wordpress.org/edent)  
+**Contributors:** [pfefferle](https://profiles.wordpress.org/pfefferle/), [dshanske](https://profiles.wordpress.org/dshanske/), [edent](https://profiles.wordpress.org/edent/)  
 **Donate link:** https://notiz.blog/donate/  
 **Tags:** webmention, pingback, trackback, linkback, microformats, comments, indieweb  
 **Requires at least:** 4.9  
 **Requires PHP:** 5.6  
-**Tested up to:** 5.9  
-**Stable tag:** 3.11.2  
+**Tested up to:** 6.1  
+**Stable tag:** 3.11.3  
 **License:** MIT  
 **License URI:** http://opensource.org/licenses/MIT  
 
@@ -86,9 +86,14 @@ The plugin uses a locally cached version of the mystery icon normally provided b
 
 Project actively developed on Github at [pfefferle/wordpress-semantic-linkbacks](https://github.com/pfefferle/wordpress-semantic-linkbacks). Please file support issues there.
 
+### 3.11.3 ###
+
+* Deactivate itself if Webmention Version is 5.0.0 or above
+
 ### 3.11.2 ###
 
 * Fix array access issue
+* Fix coding standards
 
 ### 3.11.1 ###
 
