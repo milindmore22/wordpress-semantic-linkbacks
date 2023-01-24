@@ -5,17 +5,19 @@
  * Description: Semantic Linkbacks for WebMentions, Trackbacks and Pingbacks
  * Author: Matthias Pfefferle
  * Author URI: https://notiz.blog/
- * Version: 3.11.2
+ * Version: 3.11.3
  * License: MIT
  * License URI: http://opensource.org/licenses/MIT
  * Text Domain: semantic-linkbacks
  * Requires PHP: 5.6
  */
 
-add_action( 'plugins_loaded', array( 'Semantic_Linkbacks_Plugin', 'init' ), 11 );
+if ( ! function_exists( '\Webmention\version' ) || version_compare( \Webmention\version(), '5.0.0', '<' ) ) {
+	add_action( 'plugins_loaded', array( 'Semantic_Linkbacks_Plugin', 'init' ), 11 );
 
-// initialize admin settings
-add_action( 'admin_init', array( 'Semantic_Linkbacks_Plugin', 'admin_init' ) );
+	// initialize admin settings
+	add_action( 'admin_init', array( 'Semantic_Linkbacks_Plugin', 'admin_init' ) );
+}
 
 /**
  * Semantic linkbacks class
