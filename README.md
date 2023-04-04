@@ -1,3 +1,9 @@
+![project status: inactive](https://img.shields.io/badge/project_status-inactive-red.svg?style=flat)
+
+The plugin was merged into the [Webmention plugin](https://github.com/pfefferle/wordpress-webmention).
+
+----
+
 # Semantic-Linkbacks #
 **Contributors:** [pfefferle](https://profiles.wordpress.org/pfefferle/), [dshanske](https://profiles.wordpress.org/dshanske/), [edent](https://profiles.wordpress.org/edent/)  
 **Donate link:** https://notiz.blog/donate/  
